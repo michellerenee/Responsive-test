@@ -11,17 +11,62 @@ body{
 }
 
 h1{
-  font-family: 'Bree Serif', Serif;
+  font-family: 'Bree Serif', serif;
   font-size: 60px;
   margin-top: 100px;
-}
-
-a{
-  color: white;
-  font-size: larger;
 }
 
 footer{
   padding: 20px 0;
   font-size: larger;
 }
+
+/* Navigation Main style */
+nav{
+  background-color: #fff979;
+}
+
+/* Removing margin, padding and list styles from nav ul */
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav a{
+  display: block;
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+nav a:hover{
+  background-color: #212121;
+  color: white;
+}
+
+/* Responsive styles with media query */
+@media all and (max-width: 768px){
+  h1{
+    font-size: 35px;
+    margin-top: 0;
+  }
+
+  nav ul li{
+    display: block;
+    border-bottom: 1px solid #ffee5b;
+  }
+
+  nav a{
+    text-align: center;
+  }
+
+  footer{
+    display: none;
+  }
+} /* media query end */
