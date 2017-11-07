@@ -10,10 +10,17 @@
 <header>
   <h1>The Oldtimer Shop</h1>
 </header>
-<nav>
+<button onclick="myfunction()">Toggle menu</button>
+<nav id="mynav">
   <ul>
     <li><a href="#" target="_self">Home</a></li>
-    <li><a href="#" target="_self">Volkswagen</a></li>
+    <li><a href="#" target="_self">Volkswagen</a>
+      <ul>
+        <li><a href="#" target="_self">Golf</a></li>
+        <li><a href="#" target="_self">Passat</a></li>
+        <li><a href="#" target="_self">Polo</a></li>
+      </ul>
+    </li>
     <li><a href="#" target="_self">Porsches</a></li>
     <li><a href="#" target="_self">Borgwald</a></li>
     <li><a href="#" target="_self">News</a></li>
@@ -24,5 +31,11 @@
 <footer>
   <p>Copyright &copy; 2017 - The Oldtimer Shop</p>
 </footer>
+<script>
+  function myfunction() {
+      var element = document.getElementById('mynav');
+      element.classList.toggle()
+  }
+</script>
 </body>
 </html>

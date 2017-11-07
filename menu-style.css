@@ -50,6 +50,21 @@ nav a:hover{
   color: white;
 }
 
+nav ul ul{
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover > ul{
+  display: inherit;
+  background-color: #fffa9b;
+}
+
+nav ul ul li{
+  display: block;
+  width: 134px;
+}
+
 /* Responsive styles with media query */
 @media all and (max-width: 768px){
   h1{
@@ -60,10 +75,23 @@ nav a:hover{
   nav ul li{
     display: block;
     border-bottom: 1px solid #ffee5b;
+    text-align: center;
   }
 
-  nav a{
-    text-align: center;
+  nav ul li:last-child{
+    border: none;
+  }
+
+  nav ul ul{
+    position: static;
+  }
+
+  nav ul li:hover ul{
+    width: 100%;
+  }
+
+  nav ul ul li{
+    width: 100%;
   }
 
   footer{
