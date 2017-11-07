@@ -65,8 +65,24 @@ nav ul ul li{
   width: 134px;
 }
 
+.mystyle{
+  display: block;
+}
+
+button{
+  display: none;
+}
+
 /* Responsive styles with media query */
 @media all and (max-width: 768px){
+  nav{
+    display: none;
+  }
+
+  button{
+    display: block;
+  }
+
   h1{
     font-size: 35px;
     margin-top: 0;
